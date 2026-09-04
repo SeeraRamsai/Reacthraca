@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TR HR & ACA Website
 
 This project has been upgraded from plain HTML/CSS/JS into a modern frontend app using:
@@ -69,3 +70,7 @@ Recommended hosts:
 - Shared site content currently lives in `src/data/site.js`.
 - The donation flow is still front-end only until a real payment gateway and backend are connected.
 - Legal policy pages still contain template content and should be reviewed before going live.
+=======
+# Reacthraca
+React version of hraca
+>>>>>>> 064c260d3b4ae6bd93207d707e74da50ecf12156
