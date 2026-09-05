@@ -106,6 +106,41 @@ export default function HomePage() {
       </section>
 
       <section className="page-shell py-20">
+        <div className="mb-10">
+          <SectionHeader
+            eyebrow="Recent activity"
+            title="Community action and advocacy in motion"
+            description="Recent field activity reflects the organisation’s continued commitment to justice, human rights, and public accountability."
+          />
+        </div>
+
+        {site.recentActivities.map((activity) => (
+          <div key={activity.title} className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
+            <div className="grid gap-0 lg:grid-cols-[1.1fr_0.9fr]">
+              <div className="p-8 sm:p-10 lg:p-12">
+                <div className="mb-4 flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-accent-600">
+                  <span>{activity.date}</span>
+                  <span className="text-slate-300">•</span>
+                  <span>{activity.location}</span>
+                </div>
+                <h3 className="font-display text-3xl text-slate-900 sm:text-4xl">{activity.title}</h3>
+                <p className="mt-5 text-base leading-8 text-slate-600">{activity.summary}</p>
+                <p className="mt-5 text-sm leading-8 text-slate-600">{activity.description}</p>
+              </div>
+
+              <div className="grid gap-4 bg-slate-50 p-4 sm:p-6 lg:grid-cols-2">
+                {activity.images.map((image, index) => (
+                  <div key={`${activity.title}-${index}`} className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-sm">
+                    <img src={image} alt={`${activity.title} ${index + 1}`} className="h-64 w-full object-cover" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <section className="page-shell py-20">
         <div className="grid gap-6 lg:grid-cols-3">
           {[
             { icon: Users, title: 'Volunteer', text: 'Join literacy circles, field visits, event support, and community outreach.', link: '/volunteer' },

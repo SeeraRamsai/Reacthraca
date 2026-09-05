@@ -34,6 +34,18 @@ export const site = {
     raised: 640000,
     goal: 1200000,
   },
+  recentActivities: [
+    {
+      title: 'Candlelight rally for justice for Oke Sirisha',
+      date: 'Recent activity',
+      location: 'Julurupadu mandal, Bhadradri Kothagudem district, Telangana',
+      summary:
+        'National Secretary Kodem Seethakumari and the TR Human Rights and Anti-Corruption Organization team held a candlelight rally demanding justice for Oke Sirisha and her family.',
+      description:
+        'In the main center of Julurupadu mandal in Bhadradri Kothagudem district of Telangana state, National Secretary Kodem Seethakumari and the team of the TR Human Rights and Anti-Corruption Organization conducted a candlelight rally. They stated that the struggle will not stop until justice is delivered for the recently deceased Oke Sirisha, and peacefully protested demanding justice for Oke Sirisha and her family.',
+      images: [assetPath('aca-1.jpeg'), assetPath('aca-2.jpeg')],
+    },
+  ],
   campaigns: [
     {
       id: 'school-kits',
