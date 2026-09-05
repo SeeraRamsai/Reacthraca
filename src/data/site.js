@@ -21,10 +21,10 @@ export const site = {
     ngoDarpanId: 'TS/2026/1024089',
   },
   impactCounters: [
-    { value: 48210, label: 'Children supported' },
-    { value: 312, label: 'Villages reached' },
-    { value: 9, label: 'Years of work' },
-    { value: 18400000, label: 'Rupees deployed this year', isCurrency: true },
+    { value: 200, label: 'People reached' },
+    { value: 8, label: 'Villages engaged' },
+    { value: 1, label: 'Year of active work' },
+    { value: 100000, label: 'Funds raised through donations', isCurrency: true },
   ],
   featuredAppeal: {
     tag: 'Urgent appeal',
@@ -110,53 +110,32 @@ export const site = {
   ],
   board: [
     {
-      role: 'Founder & Managing Trustee',
-      name: 'Tarmangi MatyaRaju',
-      bio: 'Former government schoolteacher leading field-first programmes across rural communities.',
+      role: 'Managing Trustee',
+      name: 'Gunda Srinivas',
+      bio: 'Leads the trust, coordinates outreach, and guides the organisation’s early-stage community work.',
     },
     {
       role: 'Chairperson',
-      name: 'Dr. Krishna Varma',
-      bio: 'Retired district health officer supporting public health and outreach strategy.',
+      name: 'Ravulapalli Tirupathayya',
+      bio: 'Provides leadership, oversight, and strategic guidance for the trust’s social and human rights work.',
     },
     {
       role: 'Treasurer',
-      name: 'Sunita Naidu',
-      bio: 'Chartered accountant overseeing review, controls, and annual audit readiness.',
+      name: 'Korra Nageshwara Rao',
+      bio: 'Manages financial stewardship and keeps the organisation’s records transparent and accountable.',
     },
     {
       role: 'Trustee, Programmes',
-      name: 'Ravi Prasad',
-      bio: 'Leads programme operations, volunteer coordination, and village partnership work.',
+      name: 'Rajya Lakshmi',
+      bio: 'Coordinates programme planning, volunteer engagement, and field-level implementation.',
     },
     {
       role: 'Trustee, Governance',
-      name: 'Anita Mehta',
-      bio: 'Corporate lawyer advising on compliance, governance, and CSR partnerships.',
+      name: 'Tarmangi MatyaRaju',
+      bio: 'Supports governance, community trust-building, and outreach efforts across the organisation’s work.',
     },
   ],
-  documents: [
-    {
-      title: 'Audited Financial Statement — FY 2024–25',
-      meta: 'PDF · Published Sept 2025 · Audited by [Chartered Accountancy Firm Name]',
-    },
-    {
-      title: 'Annual Return — Form 10B / Trust Registrar Filing FY 2024–25',
-      meta: 'PDF · Filed with Registrar of Trusts',
-    },
-    {
-      title: 'FCRA Annual Return (FC-4) — FY 2024–25',
-      meta: 'PDF · Filed with Ministry of Home Affairs',
-    },
-    {
-      title: 'Annual Report — FY 2024–25',
-      meta: 'PDF · Programme narrative, photos and outcomes',
-    },
-    {
-      title: 'Trust Deed & 80G / 12A Certificates',
-      meta: 'PDF · Founding and tax-exemption documents',
-    },
-  ],
+  documents: [],
   donation: {
     currencies: ['INR', 'USD', 'GBP', 'EUR'],
     oneTimeAmountsINR: [500, 1000, 2500, 5000],

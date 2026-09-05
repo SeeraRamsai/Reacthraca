@@ -20,11 +20,13 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
-          <img src={`${import.meta.env.BASE_URL}images/Founder.jpeg`} alt="Founder of TR HR & ACA" className="h-80 w-full object-cover object-top" />
+          <div className="bg-slate-100 p-4">
+            <img src={`${import.meta.env.BASE_URL}images/Founder.jpeg`} alt="Managing Trustee of TR HR & ACA" className="h-80 w-full rounded-[1.25rem] object-contain object-center" />
+          </div>
           <div className="p-6">
-            <div className="text-sm font-bold uppercase tracking-[0.2em] text-accent-600">Founder & Managing Trustee</div>
-            <h3 className="mt-2 font-display text-3xl text-slate-900">Tarmangi MatyaRaju</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">Former government schoolteacher from Alluri Sitarama Raju district, leading TR HR & ACA since 2026.</p>
+            <div className="text-sm font-bold uppercase tracking-[0.2em] text-accent-600">Managing Trustee</div>
+            <h3 className="mt-2 font-display text-3xl text-slate-900">Gunda Srinivas</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-600">Leadership role with a focus on community trust, rural outreach, and the organisation’s early-stage development work.</p>
           </div>
         </div>
       </section>
