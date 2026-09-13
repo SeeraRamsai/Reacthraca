@@ -6,9 +6,9 @@ export const site = {
   orgShortDesc:
     'A registered public charitable trust supporting rural communities in Andhra Pradesh and Telangana through education, human rights awareness, and community development.',
   contact: {
-    email: 'contact@trhraca.org',
+    email: 'mounikasallangi@gmail.com',
     donationEmail: 'donations@trhraca.org',
-    phone: '+91 90000 00000',
+    phone: '+91 7989418929',
     address: 'TR HR & ACA, Visakhapatanam, Andhra Pradesh, India',
   },
   legal: {
@@ -21,8 +21,8 @@ export const site = {
     ngoDarpanId: 'TS/2026/1024089',
   },
   impactCounters: [
-    { value: 200, label: 'People reached' },
-    { value: 8, label: 'Villages engaged' },
+    { value: 400, label: 'People reached' },
+    { value: 50, label: 'Villages engaged' },
     { value: 1, label: 'Year of active work' },
     { value: 100000, label: 'Funds raised through donations', isCurrency: true },
   ],
@@ -31,8 +31,8 @@ export const site = {
     title: 'Monsoon flood relief — Godavari districts',
     blurb:
       'Families in 14 flood-affected villages need dry rations, clean water and temporary shelter this week.',
-    raised: 640000,
-    goal: 1200000,
+    raised: 0,
+    goal: 0,
   },
   recentActivities: [
     {
@@ -52,8 +52,8 @@ export const site = {
       title: 'School Kits for Class 1–5',
       summary:
         'Uniforms, textbooks and a school bag for children starting the academic year.',
-      raised: 420000,
-      goal: 600000,
+      raised: 0,
+      goal: 0,
       urgent: false,
       image: assetPath('service -1.jpeg'),
     },
@@ -62,8 +62,8 @@ export const site = {
       title: 'Monsoon Flood Relief',
       summary:
         'Emergency rations, water purification and tarpaulin shelter for displaced families.',
-      raised: 640000,
-      goal: 1200000,
+      raised: 0,
+      goal: 0,
       urgent: true,
       image: assetPath('service -2.jpeg'),
     },
@@ -72,8 +72,8 @@ export const site = {
       title: 'Midday Nutrition Programme',
       summary:
         'A hot, nutritious mid-day meal for children across 40 partner schools.',
-      raised: 890000,
-      goal: 1500000,
+      raised: 0,
+      goal: 0,
       urgent: false,
       image: assetPath('service -3.jpeg'),
     },
@@ -82,8 +82,8 @@ export const site = {
       title: 'Girl Child Scholarships',
       summary:
         'Tuition and transport support so girls can complete secondary school.',
-      raised: 275000,
-      goal: 500000,
+      raised: 0,
+      goal: 0,
       urgent: false,
       image: assetPath('service -4.jpeg'),
     },
@@ -92,8 +92,8 @@ export const site = {
       title: 'Mobile Health Camps',
       summary:
         'Monthly health check-ups and basic medicine in villages with no clinic nearby.',
-      raised: 160000,
-      goal: 400000,
+      raised: 0,
+      goal: 0,
       urgent: false,
       image: assetPath('service -5.jpeg'),
     },
@@ -102,8 +102,8 @@ export const site = {
       title: 'Youth Skill Training',
       summary:
         'Vocational training in tailoring, computers and electrical work for ages 17–24.',
-      raised: 95000,
-      goal: 350000,
+      raised: 0,
+      goal: 0,
       urgent: false,
       image: assetPath('service -6.jpeg'),
     },
