@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, HeartHandshake, Landmark, Sparkles, Users } from 'lucide-react'
-import { site, formatRupees } from '../data/site'
+import { site, formatRupees, assetPath } from '../data/site'
 import SectionHeader from '../components/SectionHeader'
 import CampaignCard from '../components/CampaignCard'
 
@@ -56,6 +56,41 @@ export default function HomePage() {
               <div className="font-display text-4xl text-brand-900">{item.isCurrency ? formatRupees(item.value) : item.value.toLocaleString('en-IN')}</div>
               <div className="mt-2 text-sm font-medium text-slate-500">{item.label}</div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="page-shell py-14 sm:py-16">
+        <div className="mb-8 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent-600">Our leadership</p>
+            <h2 className="mt-3 font-display text-3xl font-bold text-slate-950 sm:text-4xl">Guided by commitment and service</h2>
+        </div>
+        <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+          {[
+            {
+              image: 'Founder.jpeg',
+              role: 'Founder & National President',
+              name: 'Tarmangi Matchyaraju',
+              description: 'Provides leadership and direction for the trust’s community-focused work.',
+            },
+            {
+              image: 'Co-founder.jpeg',
+              role: 'Co-Founder & National Board of Directors',
+              name: 'Ravulapally Thirupataiah',
+              description: 'Helps shape the organisation’s mission and strengthen its community outreach.',
+            },
+          ].map((leader) => (
+            <article key={leader.role} className="grid overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:grid-cols-[0.85fr_1.15fr]">
+              <div className="aspect-[4/5] overflow-hidden bg-sky-100 sm:aspect-auto sm:min-h-[18rem]">
+                <img src={assetPath(leader.image)} alt={leader.role} className="h-full w-full object-cover object-top" />
+              </div>
+              <div className="flex flex-col justify-center p-6 sm:p-7">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-600">TR HR & ACA</p>
+                <h3 className="mt-3 font-display text-2xl font-bold text-slate-950">{leader.role}</h3>
+                <p className="mt-1 text-base font-semibold text-brand-800">{leader.name}</p>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{leader.description}</p>
+              </div>
+            </article>
           ))}
         </div>
       </section>
@@ -128,10 +163,10 @@ export default function HomePage() {
                 <p className="mt-5 text-sm leading-8 text-slate-600">{activity.description}</p>
               </div>
 
-              <div className="grid gap-4 bg-slate-50 p-4 sm:p-6 lg:grid-cols-2">
+              <div className="grid content-start grid-cols-1 gap-4 bg-slate-50 p-4 sm:p-6">
                 {activity.images.map((image, index) => (
-                  <div key={`${activity.title}-${index}`} className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-sm">
-                    <img src={image} alt={`${activity.title} ${index + 1}`} className="h-64 w-full object-cover" />
+                  <div key={`${activity.title}-${index}`} className="aspect-video overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                    <img src={image} alt={`${activity.title} ${index + 1}`} className="h-full w-full object-cover object-center" />
                   </div>
                 ))}
               </div>

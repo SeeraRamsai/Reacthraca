@@ -22,7 +22,7 @@ export default function Navbar() {
           <img src={assetPath('Brand Logo.jpeg')} alt="TR HR & ACA logo" className="h-12 w-12 rounded-2xl object-cover shadow-soft" />
           <div>
             <div className="font-display text-xl font-bold text-brand-900">TR HR & ACA</div>
-            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Public Charitable Trust</div>
+            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">NGO</div>
           </div>
         </Link>
 

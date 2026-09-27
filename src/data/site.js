@@ -28,11 +28,11 @@ export const site = {
   ],
   featuredAppeal: {
     tag: 'Urgent appeal',
-    title: 'Monsoon flood relief — Godavari districts',
+    title: 'AIDS campaign - ASR district',
     blurb:
-      'Families in 14 flood-affected villages need dry rations, clean water and temporary shelter this week.',
+      'Protect your future, protect your community. Stop by our desk to grab free awareness kits and join the movement to end HIV stigma in ASR.',
     raised: 0,
-    goal: 0,
+    goal: 200000,
   },
   recentActivities: [
     {
