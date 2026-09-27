@@ -9,6 +9,7 @@ import VolunteerPage from './pages/VolunteerPage'
 import TermsPage from './pages/TermsPage'
 import PrivacyPage from './pages/PrivacyPage'
 import RefundPage from './pages/RefundPage'
+import TestimonialsPage from './pages/TestimonialsPage'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/donate" element={<DonatePage />} />
         <Route path="/financials" element={<FinancialsPage />} />
         <Route path="/volunteer" element={<VolunteerPage />} />
+        <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/refund" element={<RefundPage />} />

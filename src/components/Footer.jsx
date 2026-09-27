@@ -20,6 +20,7 @@ export default function Footer() {
           <div className="mt-4 flex flex-col gap-3 text-sm">
             <Link to="/about">About Us</Link>
             <Link to="/programmes">Programmes</Link>
+            <Link to="/testimonials">Testimonials</Link>
             <Link to="/financials">Financials & Reports</Link>
             <Link to="/volunteer">Join Us</Link>
           </div>
