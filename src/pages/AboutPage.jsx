@@ -1,5 +1,5 @@
 import SectionHeader from '../components/SectionHeader'
-import { site } from '../data/site'
+import { assetPath, site } from '../data/site'
 
 export default function AboutPage() {
   return (
@@ -14,20 +14,44 @@ export default function AboutPage() {
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
           <h3 className="font-display text-3xl text-slate-900">Where it started</h3>
           <div className="mt-5 space-y-4 text-sm leading-8 text-slate-600">
-            <p>TR HR & ACA was founded in 2026 by <strong>Tarmangi MatyaRaju</strong>, a schoolteacher from Alluri Sitarama Raju district, after a flood closed her village school for four months.</p>
+            <p>TR HR & ACA was founded in 2026 by <strong>Tarmangi Matchyaraju</strong>, a schoolteacher from Alluri Sitarama Raju district, after a flood closed her village school for four months.</p>
             <p>She began by collecting used textbooks from schools in the city and cycling them out to flood-hit villages on weekends. Within a year, twelve volunteers had joined her, and a spare classroom became the first of what is now a year-round schools and nutrition programme.</p>
             <p>Today, the organisation works through local partnerships, volunteers, and field staff across hundreds of villages. The goal remains simple: reduce injustice, expand access, and keep support practical.</p>
           </div>
         </div>
-        <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
-          <div className="bg-slate-100 p-4">
-            <img src={`${import.meta.env.BASE_URL}images/Founder.jpeg`} alt="Managing Trustee of TR HR & ACA" className="h-80 w-full rounded-[1.25rem] object-contain object-center" />
-          </div>
-          <div className="p-6">
-            <div className="text-sm font-bold uppercase tracking-[0.2em] text-accent-600">Managing Trustee</div>
-            <h3 className="mt-2 font-display text-3xl text-slate-900">Gunda Srinivas</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">Leadership role with a focus on community trust, rural outreach, and the organisation’s early-stage development work.</p>
-          </div>
+        <div className="grid gap-6">
+          {[
+            {
+              image: 'Founder.jpeg',
+              role: 'Founder & National President',
+              name: 'Tarmangi Matchyaraju',
+              description: 'Provides leadership and direction for the trust’s community-focused work.',
+            },
+            {
+              image: 'Co-founder.jpeg',
+              role: 'Co-Founder & National Board of Directors',
+              name: 'Ravulapally Thirupataiah',
+              description: 'Helps shape the organisation’s mission and strengthen its community outreach.',
+            },
+            {
+              image: 'Gunda-Srinivas.jpeg',
+              role: 'Managing Trustee',
+              name: 'Gunda Srinivas',
+              description: 'Gunda Srinivas joined APSEB on 13 October 1993 and will retire on 31 October 2026 after 33 years of service. In December 2024, he became the Warangal District President of INTUC (TGEEU327). In May, he joined the Human Rights organisation as a National Board Director.',
+            },
+          ].map((leader) => (
+            <article key={leader.role} className="grid overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft sm:grid-cols-[0.85fr_1.15fr]">
+              <div className="aspect-[4/5] overflow-hidden bg-sky-100 sm:aspect-auto sm:min-h-[14rem]">
+                <img src={assetPath(leader.image)} alt={`${leader.role}: ${leader.name}`} className="h-full w-full object-cover object-top" />
+              </div>
+              <div className="flex flex-col justify-center p-6">
+                <div className="text-sm font-bold uppercase tracking-[0.2em] text-accent-600">TR HR & ACA</div>
+                <h3 className="mt-2 font-display text-2xl text-slate-900">{leader.role}</h3>
+                <p className="mt-1 text-base font-semibold text-brand-800">{leader.name}</p>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{leader.description}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 

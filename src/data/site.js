@@ -112,11 +112,11 @@ export const site = {
     {
       role: 'Managing Trustee',
       name: 'Gunda Srinivas',
-      bio: 'Leads the trust, coordinates outreach, and guides the organisation’s early-stage community work.',
+      bio: 'Gunda Srinivas joined APSEB on 13 October 1993 and will retire on 31 October 2026 after 33 years of service. In December 2024, he became the Warangal District President of INTUC (TGEEU327). In May, he joined the Human Rights organisation as a National Board Director.',
     },
     {
       role: 'Chairperson',
-      name: 'Ravulapalli Tirupathayya',
+      name: 'Ravulapally Thirupataiah',
       bio: 'Provides leadership, oversight, and strategic guidance for the trust’s social and human rights work.',
     },
     {
@@ -131,7 +131,7 @@ export const site = {
     },
     {
       role: 'Trustee, Governance',
-      name: 'Tarmangi MatyaRaju',
+      name: 'Tarmangi Matchyaraju',
       bio: 'Supports governance, community trust-building, and outreach efforts across the organisation’s work.',
     },
   ],
