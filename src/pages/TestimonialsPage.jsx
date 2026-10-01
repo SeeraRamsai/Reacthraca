@@ -57,6 +57,24 @@ const stories = [
     description: 'An open conversation where participants can raise questions and hear one another.',
     imageClass: 'aspect-[4/3] object-cover object-center',
   },
+  {
+    image: 'aca-1.jpeg',
+    title: 'Candlelight rally for justice',
+    description: 'National Secretary Kodem Seethakumari and the TR Human Rights and Anti-Corruption Organization team held a candlelight rally demanding justice for Oke Sirisha and her family.',
+    imageClass: 'aspect-[4/3] object-cover object-center',
+  },
+  {
+    image: 'aca-2.jpeg',
+    title: 'Community stands together for justice',
+    description: 'A moment from the candlelight rally in Julurupadu, where the team and community members called for justice for Oke Sirisha and her family.',
+    imageClass: 'aspect-[4/3] object-cover object-center',
+  },
+  ...Array.from({ length: 8 }, (_, index) => ({
+    image: `t${index + 1}.jpeg`,
+    title: `Community story ${String(index + 12).padStart(2, '0')}`,
+    description: 'A community photograph documenting the people and activities connected with TR HR & ACA.',
+    imageClass: 'aspect-[4/3] object-cover object-center',
+  })),
 ]
 
 export default function TestimonialsPage() {
@@ -74,7 +92,7 @@ export default function TestimonialsPage() {
           <div className="flex items-center gap-4 border-t border-white/20 pt-5 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
             <UsersRound className="h-8 w-8 shrink-0 text-accent-300" />
             <div>
-              <div className="font-display text-3xl font-bold">09</div>
+              <div className="font-display text-3xl font-bold">{String(stories.length).padStart(2, '0')}</div>
               <div className="text-sm text-slate-200">community photographs</div>
             </div>
           </div>
@@ -92,7 +110,7 @@ export default function TestimonialsPage() {
           </p>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {stories.map((story, index) => (
             <article key={story.image} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="overflow-hidden bg-slate-100">
