@@ -7,73 +7,61 @@ const stories = [
     image: 'service -1.jpeg',
     title: 'People behind the work',
     description: 'A team gathering that reflects the relationships behind local outreach.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'service -2.jpeg',
     title: 'Leadership in the community',
     description: 'Organisation leaders sharing their purpose and meeting with community members.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'service -3.jpeg',
     title: 'Together across the community',
     description: 'Residents and volunteers gathered together in a show of community participation.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'service -4.jpeg',
     title: 'A shared celebration',
     description: 'Local participants coming together for a community event.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'service -5.jpeg',
     title: 'Making community voices visible',
     description: 'A public gathering focused on bringing people together around a shared cause.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'service -6.jpeg',
     title: 'A space to share perspectives',
     description: 'Participants listening and exchanging ideas during a group discussion.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'service -7.jpeg',
     title: 'Support shared with care',
     description: 'Women gathered for a document handover and a moment of recognition.',
-    imageClass: 'aspect-[3/4] object-contain bg-slate-100',
   },
   {
     image: 'service -8.jpeg',
     title: 'Local voices around the table',
     description: 'Community members and organisers meeting in person to discuss local priorities.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'service -9.jpeg',
     title: 'Listening and learning together',
     description: 'An open conversation where participants can raise questions and hear one another.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'aca-1.jpeg',
     title: 'Candlelight rally for justice',
     description: 'National Secretary Kodem Seethakumari and the TR Human Rights and Anti-Corruption Organization team held a candlelight rally demanding justice for Oke Sirisha and her family.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   {
     image: 'aca-2.jpeg',
     title: 'Community stands together for justice',
     description: 'A moment from the candlelight rally in Julurupadu, where the team and community members called for justice for Oke Sirisha and her family.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   },
   ...Array.from({ length: 8 }, (_, index) => ({
     image: `t${index + 1}.jpeg`,
     title: `Community story ${String(index + 12).padStart(2, '0')}`,
     description: 'A community photograph documenting the people and activities connected with TR HR & ACA.',
-    imageClass: 'aspect-[4/3] object-cover object-center',
   })),
 ]
 
@@ -112,16 +100,16 @@ export default function TestimonialsPage() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {stories.map((story, index) => (
-            <article key={story.image} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <div className="overflow-hidden bg-slate-100">
+            <article key={story.image} className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100">
                 <img
                   src={assetPath(story.image)}
                   alt={story.title}
-                  className={`w-full ${story.imageClass}`}
+                  className="h-full w-full object-cover object-[center_30%]"
                   loading={index > 2 ? 'lazy' : 'eager'}
                 />
               </div>
-              <div className="p-5 sm:p-6">
+              <div className="flex-1 p-5 sm:p-6">
                 <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-accent-600">Community story {String(index + 1).padStart(2, '0')}</div>
                 <h3 className="font-display text-2xl font-bold text-slate-900">{story.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">{story.description}</p>
