@@ -37,7 +37,7 @@ export default function AboutPage() {
               image: 'Gunda-Srinivas.jpeg',
               role: 'National Board of Director',
               name: 'Gunda Srinivas',
-              description: 'Gunda Srinivas joined APSEB on 13 October 1993 and will retire on 31 October 2026 after 33 years of service. In December 2024, he became the Warangal District President of INTUC (TGEEU327). Currently working as a Senior Line Inspector in warangal district. In May, he joined the Human Rights organisation as a National Board Director.',
+              description: 'Gunda Srinivas joined APSEB on 13 October 1993 and will retire on 31 October 2026 after 33 years of service. In December 2024, he became the Warangal District President of INTUC (TGEEU327). Currently working as a Senior Line Inspector at TGNPDCL in warangal district . In May, he joined the Human Rights organisation as a National Board Director.',
             },
           ].map((leader) => (
             <article key={leader.role} className="grid overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft sm:grid-cols-[0.85fr_1.15fr]">
